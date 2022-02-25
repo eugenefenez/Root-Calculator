@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eugene Fenez">
+    <link rel="stylesheet" href="D:\School\webDevBasics\module3\css\rootCalculator.css">
+    <script src="D:\School\webDevBasics\module3\javaScript\rootCalculator.js" defer></script>
+    <title>Quadratic Equation Roots</title>
+</head>
+
+<body>
+
+    <h1>Quadratic Equation Root Calculator</h1>
+
+    <p>This web page finds the roots of a polynomial equation in the folloing form:<br>
+        <i>ax<sup>2</sup> + bx + c = 0</i>
+    </p>
+
+    <p><i>a</i>, <i>b</i>, <i>c</i> must be integers between -99 and +99, and <i>a</i> must be non-zero.</p>
+
+    <form class="table">
+        <div class="row">
+            <lable for="a-Int">a:</lable>
+            <input type="number" id="a-int" min="-99" max="99" step="1" required>
+            <lable for="b-Int">b:</lable>
+            <input type="number" id="b-int" min="-99" max="99" step="1" required>
+            <lable for="c-Int">c:</lable>
+            <input type="number" id="c-int" min="-99" max="99" step="1" required>
+        </div>
+    </form>
+    <p>
+        <input type="button" id="calc-btn" value="Calculate roots" onclick="calculateRoot()">
+    </p>
+    <output id="result"></output>
+</body>
+
+</html>
